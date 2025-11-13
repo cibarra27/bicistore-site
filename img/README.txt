@@ -1,0 +1,1 @@
+Carpeta de imágenes para el proyecto BiciStore (puedes agregar tus propias fotos de bicicletas y accesorios).

@@ -4,30 +4,75 @@
   <meta charset="UTF-8">
   <title>BiciStore - Contacto</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto demostrativo de BiciStore.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <div class="logo"><h1>BiciStore</h1><p>Tu tienda de bicicletas</p></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="contacto.html" class="activo">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-<main class="contenedor">
-  <h2>Contacto</h2>
-  <p>Formulario ficticio. No se envían datos reales.</p>
-  <form action="mailto:contacto@bicistore-demo.com" method="post">
-    <input type="text" name="nombre" placeholder="Tu nombre">
-    <input type="email" name="email" placeholder="Correo electrónico">
-    <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</main>
-<footer><p>© 2025 BiciStore</p></footer>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">
+        <span class="logo-icon">🚲</span>
+        <div class="logo-text">
+          <h1>BiciStore</h1>
+          <p>Tienda ficticia de bicicletas y accesorios</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="page-header">
+        <h2>Contacto</h2>
+        <p class="page-subtitle">
+          Este formulario es solo demostrativo. Al enviarlo, se abrirá tu cliente de correo.
+          No se almacenan datos en servidores ni se procesan solicitudes reales.
+        </p>
+      </header>
+
+      <form action="mailto:contacto@bicistore-demo.com" method="post" enctype="text/plain" class="contact-form">
+        <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com">
+        </div>
+
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje (ficticio) aquí..."></textarea>
+        </div>
+
+        <button type="submit" class="btn primary">Enviar mensaje</button>
+      </form>
+
+      <p class="form-note">
+        Nota: El correo y los datos utilizados en este formulario son parte de un ejercicio académico.
+        No se responde ni almacena ninguna solicitud enviada.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 BiciStore — Sitio ficticio para fines académicos. No se realizan ventas reales.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

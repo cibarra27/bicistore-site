@@ -4,30 +4,125 @@
   <meta charset="UTF-8">
   <title>BiciStore - Inicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BiciStore - Tienda ficticia de bicicletas y accesorios, creada con fines académicos.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <div class="logo">
-    <h1>BiciStore</h1>
-    <p>Tu tienda de bicicletas y accesorios</p>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="activo">Inicio</a></li>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-<main class="contenedor">
-  <section class="hero">
-    <h2>Bienvenido a BiciStore</h2>
-    <p>Tienda ficticia creada con fines académicos.</p>
-    <a href="productos.html" class="btn-principal">Ver productos</a>
-  </section>
-</main>
-<footer><p>© 2025 BiciStore — Sitio ficticio. Sin ventas reales.</p></footer>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">
+        <span class="logo-icon">🚲</span>
+        <div class="logo-text">
+          <h1>BiciStore</h1>
+          <p>Tienda ficticia de bicicletas y accesorios</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Pedalea tus metas.</h2>
+          <p>
+            BiciStore es una tienda ficticia creada para fines académicos. El sitio
+            simula una tienda moderna de bicicletas y accesorios, ideal para practicar
+            diseño web y análisis de ciberseguridad sobre una página estática.
+          </p>
+          <div class="hero-actions">
+            <a href="productos.html" class="btn primary">Ver catálogo</a>
+            <a href="nosotros.html" class="btn ghost">Saber más</a>
+          </div>
+          <ul class="hero-tags">
+            <li>Catálogo demostrativo</li>
+            <li>Sin ventas reales</li>
+            <li>Proyecto académico</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h3>Top ventas (demo)</h3>
+          <ul>
+            <li>
+              <span>Bicicleta Ruta Pro</span>
+              <span class="price">$1.199.990</span>
+            </li>
+            <li>
+              <span>MTB Trail X</span>
+              <span class="price">$849.990</span>
+            </li>
+            <li>
+              <span>Casco Road Air</span>
+              <span class="price">$64.990</span>
+            </li>
+          </ul>
+          <p class="hero-note">
+            Todos los productos y precios son ficticios. No corresponde a una tienda real.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="section-title">Categorías principales</h3>
+        <div class="grid-3">
+          <article class="card category">
+            <h4>Bicicletas de ruta</h4>
+            <p>Modelos ligeros y aerodinámicos para entrenar y competir en asfalto.</p>
+          </article>
+          <article class="card category">
+            <h4>Mountain bikes</h4>
+            <p>Diseñadas para cerros, senderos y aventuras fuera del camino.</p>
+          </article>
+          <article class="card category">
+            <h4>Accesorios esenciales</h4>
+            <p>Cascos, luces, candados y más elementos básicos para pedalear seguro.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container">
+        <h3 class="section-title">¿Por qué usar este sitio en un proyecto de ciberseguridad?</h3>
+        <div class="grid-3 feature-grid">
+          <article class="feature">
+            <h4>Arquitectura simple</h4>
+            <p>Es un sitio estático sin backend, ideal para entender riesgos y beneficios de este enfoque.</p>
+          </article>
+          <article class="feature">
+            <h4>Escenarios de prueba</h4>
+            <p>Permite realizar pruebas de reconocimiento, análisis de cabeceras y simulación de ataques.</p>
+          </article>
+          <article class="feature">
+            <h4>Informe técnico</h4>
+            <p>Sirve como base para elaborar un informe profesional de riesgos, controles y mejoras.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 BiciStore — Sitio ficticio para fines académicos. No se realizan ventas reales.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

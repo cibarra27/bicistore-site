@@ -4,25 +4,77 @@
   <meta charset="UTF-8">
   <title>BiciStore - Nosotros</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Información sobre BiciStore, tienda ficticia utilizada para fines académicos.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <div class="logo"><h1>BiciStore</h1><p>Tu tienda de bicicletas</p></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="nosotros.html" class="activo">Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-<main class="contenedor">
-  <h2>Sobre BiciStore</h2>
-  <p>BiciStore es una tienda ficticia creada con fines académicos.</p>
-  <p>No se realizan ventas reales ni se procesan datos personales.</p>
-</main>
-<footer><p>© 2025 BiciStore</p></footer>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">
+        <span class="logo-icon">🚲</span>
+        <div class="logo-text">
+          <h1>BiciStore</h1>
+          <p>Tienda ficticia de bicicletas y accesorios</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html" class="active">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="page-header">
+        <h2>Sobre BiciStore</h2>
+        <p class="page-subtitle">
+          BiciStore no es una empresa real. Es una marca ficticia creada para apoyar
+          proyectos de estudio, especialmente en el ámbito de ciberseguridad y desarrollo web.
+        </p>
+      </header>
+
+      <div class="grid-2 about-grid">
+        <section>
+          <h3>Propósito del sitio</h3>
+          <p>
+            Este sitio representa una tienda moderna de bicicletas y accesorios, similar
+            a las que se encuentran en internet, pero sin funcionalidades de compra ni
+            manejo de datos personales reales.
+          </p>
+          <p>
+            La idea es contar con una base realista sobre la cual un estudiante pueda
+            aplicar conceptos de arquitectura segura, análisis de riesgos, pruebas básicas
+            de ethical hacking y propuestas de mejora.
+          </p>
+        </section>
+
+        <section>
+          <h3>Alcance académico</h3>
+          <ul class="bullet-list">
+            <li>El contenido es demostrativo y puede modificarse para fines de aprendizaje.</li>
+            <li>No se procesan pagos, pedidos ni inicios de sesión.</li>
+            <li>Cualquier dato ingresado en el formulario se maneja a través de <code>mailto:</code>.</li>
+            <li>El informe técnico asociado describe controles, riesgos y futuras mejoras.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 BiciStore — Sitio ficticio para fines académicos. No se realizan ventas reales.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

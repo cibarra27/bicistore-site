@@ -4,45 +4,96 @@
   <meta charset="UTF-8">
   <title>BiciStore - Productos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo ficticio de bicicletas y accesorios de BiciStore.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <div class="logo"><h1>BiciStore</h1><p>Tu tienda de bicicletas</p></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html" class="activo">Productos</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-<main class="contenedor">
-  <h2>Catálogo de productos</h2>
-  <div class="grid-productos">
-    <article class="card-producto">
-      <img src="img/bici-ruta.jpg" alt="Ruta">
-      <h3>Bicicleta de Ruta</h3>
-      <p class="precio">$899.990</p>
-    </article>
-    <article class="card-producto">
-      <img src="img/bici-mtb.jpg" alt="MTB">
-      <h3>Bicicleta de Montaña</h3>
-      <p class="precio">$759.990</p>
-    </article>
-    <article class="card-producto">
-      <img src="img/casco.jpg" alt="Casco">
-      <h3>Casco Profesional</h3>
-      <p class="precio">$59.990</p>
-    </article>
-    <article class="card-producto">
-      <img src="img/luces.jpg" alt="Luces">
-      <h3>Luces LED</h3>
-      <p class="precio">$24.990</p>
-    </article>
-  </div>
-</main>
-<footer><p>© 2025 BiciStore — Sitio ficticio.</p></footer>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">
+        <span class="logo-icon">🚲</span>
+        <div class="logo-text">
+          <h1>BiciStore</h1>
+          <p>Tienda ficticia de bicicletas y accesorios</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html" class="active">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="page-header">
+        <div>
+          <h2>Catálogo de productos</h2>
+          <p class="page-subtitle">
+            Los productos y precios mostrados son demostrativos y no corresponden a una tienda real.
+          </p>
+        </div>
+      </header>
+
+      <div class="grid-3 product-grid">
+        <article class="card product">
+          <div class="product-tag">Ruta</div>
+          <h3>Bicicleta Ruta Pro</h3>
+          <p class="product-desc">Cuadro de carbono, grupo 105 y ruedas livianas para entrenar y competir.</p>
+          <p class="product-price">$1.199.990</p>
+        </article>
+
+        <article class="card product">
+          <div class="product-tag">Ruta</div>
+          <h3>Bicicleta Endurance Comfort</h3>
+          <p class="product-desc">Geometría cómoda para fondos largos y salidas recreativas.</p>
+          <p class="product-price">$899.990</p>
+        </article>
+
+        <article class="card product">
+          <div class="product-tag">MTB</div>
+          <h3>MTB Trail X</h3>
+          <p class="product-desc">Suspensión delantera, frenos hidráulicos y neumáticos de alto agarre.</p>
+          <p class="product-price">$849.990</p>
+        </article>
+
+        <article class="card product">
+          <div class="product-tag">MTB</div>
+          <h3>MTB Hardtail Sport</h3>
+          <p class="product-desc">Ideal para partir en el mundo del mountain bike sin complicaciones.</p>
+          <p class="product-price">$649.990</p>
+        </article>
+
+        <article class="card product">
+          <div class="product-tag">Accesorio</div>
+          <h3>Casco Road Air</h3>
+          <p class="product-desc">Casco ligero, ventilado y certificado para uso urbano y deportivo.</p>
+          <p class="product-price">$64.990</p>
+        </article>
+
+        <article class="card product">
+          <div class="product-tag">Accesorio</div>
+          <h3>Kit Luces LED USB</h3>
+          <p class="product-desc">Luces delantera y trasera recargables para mejorar tu visibilidad nocturna.</p>
+          <p class="product-price">$24.990</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 BiciStore — Sitio ficticio para fines académicos. No se realizan ventas reales.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
